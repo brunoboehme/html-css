@@ -12,6 +12,7 @@
             margin: auto;
             width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
         caption {
             font-size: 1.5em;
@@ -35,6 +36,13 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+            /*Fazer isso para manter primeira linha da tabela*/
         }
 
         td.num{

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 11</title>
+    <style>
+        /* Shorthand - background
+            color > image > position > repeat> [size] > attachment
+            size por enquanto não esta funcionando junto com a shorthand, então colcoar separado
+            */
+            /* oq esta por fora tem posicionamento relativo, oq esta dentro tem posicionamento absoluto
+    
+    usar o left e top 50% não funciona pq o conteudo tem como sua própria referencia o canto cima e esquerdo
+    
+    usar o transform translate para mover o conteudo dentro do container*/
+        #container {
+            margin: 0px;
+            background-image: url(imagens/espaco.jpg);
+            height: 96vh ;
+            background-size: 100% 100%;
+        }
+        #conteudo {
+            width: 100px;
+            height: 100px;
+            background-image: url(imagens/astronauta.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

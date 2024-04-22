@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela {
+            width: 96vh;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias facere aspernatur animi earum sequi odio voluptatum eveniet! Provident autem repellat quod quos culpa? Suscipit nesciunt ipsum obcaecati quos, quae dolores!</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pagina002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pagina003.html" target="frame">Terceira página</a></li>
+
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis delectus placeat, quos nostrum quod esse earum dolor, impedit excepturi quaerat pariatur nemo omnis vel quasi, adipisci temporibus obcaecati inventore reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus consequuntur, inventore soluta itaque culpa ullam error architecto sit reiciendis perferendis laborum, quos, quaerat recusandae ducimus. Sit harum laudantium quis repudiandae?</p>
+
+    <iframe id="tela" srcdoc="<h1> Escolha alguma das opções acima</h1> <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, sed, maiores quos accusantium veniam saepe alias aut aliquam eveniet deserunt dolorem ut laudantium, velit autem quae nisi tenetur illo sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aspernatur at aut minus nesciunt consectetur nam dolorum dicta rerum impedit laborum nulla, suscipit nobis velit. Nulla accusamus adipisci soluta perferendis!</p><img src='imagens/mascote.png'>"></iframe>frameborder="1" name="frame">
+        <p>Infelizmente seu navegador não é compatível com isso</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, sed, maiores quos accusantium veniam saepe alias aut aliquam eveniet deserunt dolorem ut laudantium, velit autem quae nisi tenetur illo sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aspernatur at aut minus nesciunt consectetur nam dolorum dicta rerum impedit laborum nulla, suscipit nobis velit. Nulla accusamus adipisci soluta perferendis!</p>
+</body>
+</html>

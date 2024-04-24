@@ -12,10 +12,13 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off"> <!--action para qual fomrulário vai o conteúdo do form e autocomplete para tirar aba de "nomes" sugeridos-->
+    <form action="cadastro.php" method="post" autocomplete="off"> <!--action para qual fomrulário vai o conteúdo do form e autocomplete para tirar aba de "nomes" sugeridos
+     method padrão é o get, o post não aparece o que foi colocado no formulário na url, mas aparece no devtool, então não é mais seguro que o get -->
         <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p> <!--Label serve para correlacionar o objeto de formulário e seu rótulo, importante usar!-->
         <p><input type="submit" value="Enviar"></p>
     </form>
+    <!--Usar get para informaçoes que não são tão valiosas, e no máximo 3 mil bits.
+    Usar o post para dados mais sensíveis, mas para informações como cartão de crédito e senhas usar https, e dados com mais de 3 mil bites-->
 </body>
 </html>

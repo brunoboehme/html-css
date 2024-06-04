@@ -1,0 +1,32 @@
+body {
+    background-color: #4b5563;
+}
+
+.container {
+  display: flex;
+  background-color: #a855f7;
+  row-gap: 10px;
+  column-gap: 10px;
+  /*gap: 10px 30px; /* primeira medida da linha e segunda da coluna*/
+  /*height: 600px;*/
+  /*flex-wrap: wrap; qunado não couper mais elementos ele quebra para a outra linha ou coluna*/
+  flex-flow: row wrap ;
+  /*flex-direction: row;*/
+  /*justify-content: center; /*para alinhar os elementos no eixo x*/
+  align-items: center; /*para centralizar a div ou colocar no end ou start (embaixo ou em cima)*/
+}
+
+.item {
+    /*width: 150px;*/
+    height: 150px;
+    background-color: #059669;
+    
+}
+
+.itemc {
+    flex-grow: 1; /*pega o espaço que ta sobrando pra ele*/ /*existe também  flex shrink para encolher o elemento */
+}
+
+.itemg {
+    flex-grow: 2; /* usa um felx grow maior que do item c*/
+}
